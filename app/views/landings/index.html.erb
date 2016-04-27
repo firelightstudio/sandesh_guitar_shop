@@ -1,23 +1,100 @@
-<h1>Landings#index</h1>
-<p>Find me in app/views/landings/index.html.erb</p>
+<% content_for :page_header do %>
+	Dashboard
+<% end %>
+<!-- /.row -->
+<div class="row">
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="fa fa-shopping-cart fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge">Purchase</div>
 
-<div class= "row dashboard">
-<div class="col-md-6 purchase">
-	Purchase
+					</div>
+				</div>
+			</div>
+			<a href="#">
+				<div class="panel-footer">
+					<span class="pull-left">View Details</span>
+					<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-green">
+			<a href="#">
+				<div class="panel-heading">
+					<div class="row">
+						<div class="col-xs-3">
+							<i class="fa fa-info  fa-5x"></i>
+						</div>
+						<div class="col-xs-9 text-right">
+							<div class="huge">Supplier Detail</div>
+
+						</div>
+					</div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="panel-footer">
+					<span class="pull-left">View Details</span>
+					<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-yellow">
+			<%= link_to guitars_path do %>
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="fa fa-plus fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge">View Stock</div>
+
+					</div>
+				</div>
+			</div>
+			<% end %>
+			<%= link_to new_guitar_path do %>
+				<div class="panel-footer">
+					<span class="pull-left">Add Guitars</span>
+					<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+	<div class="col-lg-3 col-md-6">
+		<div class="panel panel-red">
+			<div class="panel-heading">
+				<div class="row">
+					<div class="col-xs-3">
+						<i class="fa fa-bar-chart fa-5x"></i>
+					</div>
+					<div class="col-xs-9 text-right">
+						<div class="huge">Sales</div>
+
+					</div>
+				</div>
+			</div>
+			<a href="#">
+				<div class="panel-footer">
+					<span class="pull-left">View Details</span>
+					<span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+					<div class="clearfix"></div>
+				</div>
+			</a>
+		</div>
+	</div>
 </div>
 
-<div class="col-md-6 supplier">
-	Supplier Detail
-</div>
-</div>
 
-<div class= "row dashboard">
-<div class="col-md-6 add-guitar">
-	Add Guitar
-</div>
-
-<div class="col-md-6 view-stock">
-	View Stock
-</div>
-
-</div>

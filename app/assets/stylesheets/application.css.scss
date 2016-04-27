@@ -23,29 +23,3 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-//->Prelang (ui_framework:twitter_bootstrap)
-
-// Give everything in 'yield' margin to separate it.
-.yield {
-  margin: 30px;
-}
-
-// Constrain forms for models (scaffolded models) so they aren't full page width.
-.form-model {
-  max-width: 750px;
-}
-
-//->Prelang (user_login:devise)
-.form-user {
-  max-width: 450px;
-}
-
-.body{
-	background-color: grey;
-}
-.container {
-	margin-top: -20px;
-	background-color: white;
-}
-
-
