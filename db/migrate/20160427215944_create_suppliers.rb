@@ -2,8 +2,7 @@ class CreateSuppliers < ActiveRecord::Migration
   def change
     create_table :suppliers do |t|
       t.string :name
-      t.string :address
-      t.string :phone_no
+      t.string :item_supplies
 
       t.timestamps
     end
