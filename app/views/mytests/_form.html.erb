@@ -1,0 +1,14 @@
+<%= simple_form_for(@mytest) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+  <%= f.input :name, label_html: { class: 'my_class' } %>
+  <%= f.input :make, label_html: { class: 'my_class' } %>
+  <%= f.input :color, label_html: { class: 'my_class' } %>
+  <%= f.input :mrp, label_html: { class: 'my_class' } %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

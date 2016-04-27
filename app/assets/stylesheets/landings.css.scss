@@ -1,3 +1,22 @@
 // Place all the styles related to the Landings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.dashboard{
+	.col-md-6{
+		height: 100px;
+		width: 200px;
+		margin: 5px 20% 5px 20%;
+		&.purchase{
+			background-color: red;
+		}
+		&.supplier{
+			background-color: blue;
+		}
+		&.add-guitar{
+			background-color: green;
+		}
+		&.view-stock{
+			background-color: pink;
+		}
+	}
+}

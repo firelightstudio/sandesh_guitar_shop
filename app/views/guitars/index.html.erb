@@ -1,0 +1,44 @@
+<h2>List of Stocks</h2>
+<p>All the available guitars in the stock</p>
+
+
+<table class="table table-hover">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Make</th>
+			<th>Color</th>
+			<th>Mrp</th>
+			<th></th>
+			<th></th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @guitars.each do |guitar| %> 
+		<tr>
+			<td><%= guitar.name%></td>
+			<td><%= guitar.make%></td>
+			<td><%= guitar.color%></td>
+			<td><%= guitar.mrp%></td>
+			<td class='pull-right'>
+				<%= link_to new_guitar_path do %>
+					<i class="fa fa-plus pull-right"></i>
+				<% end %>
+			</td>
+			<td class='pull-right'>
+				<%= link_to edit_guitar_path(guitar) do %>
+					<i class="fa fa-pencil pull-right"></i>
+				<% end %>
+			</td>
+			<td class='pull-right'>
+				<%= link_to guitar, method: :delete, data:{confirm: "Delete this contact?"} do %>
+					<i class="fa fa-trash"></i>
+				<% end %>
+			</td>
+
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+
